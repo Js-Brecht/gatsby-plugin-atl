@@ -1,0 +1,8 @@
+{
+    "out": "docs",
+    "target": "es6",
+    "theme": "minimal",
+    "readme": "README.md",
+    "mode": "file",
+    "hideGenerator": true
+}

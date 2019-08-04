@@ -1,0 +1,50 @@
+{
+  "name": "gatsby-plugin-atl",
+  "version": "0.0.1",
+  "description": "Adds Awesome Typescript Loader support to gatsby.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Js-Brecht/gatsby-plugin-atl"
+  },
+  "keywords": [
+    "gatsby-plugin",
+    "gatsby",
+    "typescript",
+    "awesome-typescript-loader",
+    "webpack"
+  ],
+  "author": "Jeremy Albright",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Js-Brecht/gatsby-plugin-atl/issues"
+  },
+  "files": [
+    "gatsby-node.d.ts",
+    "gatsby-node.js",
+    "index.js"
+  ],
+  "scripts": {
+    "build": "ttsc",
+    "build:prod": "run-s build typedoc",
+    "typedoc": "typedoc"
+  },
+  "peerDependencies": {
+    "gatsby": "~2.13.50"
+  },
+  "dependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "ts-transform-paths": "^2.0.0",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.9",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "@typescript-eslint/typescript-estree": "^1.13.0",
+    "eslint": "^6.1.0",
+    "gatsby": "^2.13.50",
+    "npm-run-all": "^4.1.5",
+    "typedoc": "^0.15.0"
+  }
+}
