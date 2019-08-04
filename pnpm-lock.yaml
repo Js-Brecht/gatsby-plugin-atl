@@ -12,7 +12,6 @@ devDependencies:
   npm-run-all: 4.1.5
   rimraf: 2.6.3
   typedoc: 0.15.0
-  typedoc-themes-color: 0.0.10
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.5.5:
@@ -9516,10 +9515,6 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-MdTROOojxod78CEv22rIA69o7crMPLnVZPefuDLt/WepXqJwgiSu8Xxq+H36x0Jj3YGc7lOglI2vPJ2GhoOybw==
-  /typedoc-themes-color/0.0.10:
-    dev: true
-    resolution:
-      integrity: sha512-Vj6QjI488rddZzw3R/I9C4L8WqA5726TYxjLpfk49y0c8QFA7+1C1zocpLLD/tkErSh2gdzzrT/+lyn9hudLXQ==
   /typedoc/0.15.0:
     dependencies:
       '@types/minimatch': 3.0.3
@@ -10218,5 +10213,4 @@ specifiers:
   rimraf: ^2.6.3
   ts-transform-paths: ^2.0.0
   typedoc: ^0.15.0
-  typedoc-themes-color: ^0.0.10
   typescript: ^3.5.3
