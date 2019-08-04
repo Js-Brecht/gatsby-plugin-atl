@@ -22,7 +22,11 @@
   "files": [
     "gatsby-node.d.ts",
     "gatsby-node.js",
-    "index.js"
+    "types.d.ts",
+    "types.js",
+    "index.js",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "ttsc",
