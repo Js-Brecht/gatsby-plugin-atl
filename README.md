@@ -77,6 +77,9 @@ By default some `compilerOptions` options will be set for you, as a minimum conf
 * target: 'esnext'
 * module: 'esnext'
 * noEmit: true
+* moduleResolution: 'node'
+* lib: [ 'dom' ]
+* jsx: 'react'
 
 ---
 
@@ -116,6 +119,9 @@ Just make sure you use these options in your `tsconfig.json`
 {
   "module": "esnext",
   "target": "esnext",
-  "noEmit": true
+  "noEmit": true,
+  "moduleResolution": "node",
+  "lib": ["dom"],
+  "jsx": "react"
 }
 ```

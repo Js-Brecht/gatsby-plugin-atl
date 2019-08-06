@@ -1,7 +1,9 @@
 import {
     ModuleKind,
+    ModuleResolutionKind,
     ScriptTarget,
     CompilerOptions,
+    JsxEmit
 } from 'typescript';
 import { LoaderConfig, WebpackConfigFn, Transformers } from './types';
 import TsTransformPaths from 'ts-transform-paths';
@@ -16,6 +18,7 @@ import TsTransformPaths from 'ts-transform-paths';
  */
 export const onCreateWebpackConfig: WebpackConfigFn = (
     {
+        stage,
         loaders,
         actions
     },
@@ -28,7 +31,10 @@ export const onCreateWebpackConfig: WebpackConfigFn = (
     let compilerOptions: CompilerOptions = {
         module: ModuleKind.ESNext,
         target: ScriptTarget.ESNext,
-        noEmit: true
+        noEmit: true,
+        moduleResolution: ModuleResolutionKind.NodeJs,
+        lib: [ "dom" ],
+        jsx: JsxEmit.React
     }
 
     // Remove options from the `pluginOptions` that will not be used by
@@ -71,23 +77,30 @@ export const onCreateWebpackConfig: WebpackConfigFn = (
         pluginOptions
     );
 
-    actions.setWebpackConfig({
-        module: {
-            rules: [
-                {
-                    test: /\.tsx?$/,
-                    exclude: /node_modules/,
-                    use: [
-                        loaders.js(),
+    switch (stage) {
+        case "build-javascript":
+        case "build-html":
+        case "develop": {
+            actions.setWebpackConfig({
+                module: {
+                    rules: [
                         {
-                            loader: require.resolve("awesome-typescript-loader"),
-                            options
+                            test: /\.tsx?$/,
+                            exclude: /node_modules/,
+                            use: [
+                                loaders.js(),
+                                {
+                                    loader: require.resolve("awesome-typescript-loader"),
+                                    options
+                                },
+                            ],
                         },
                     ],
                 },
-            ],
-        },
-    });
+            });
+            break;
+        }
+    }
 };
 
 /**

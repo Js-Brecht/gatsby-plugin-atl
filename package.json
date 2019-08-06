@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-atl",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Adds Awesome Typescript Loader support to gatsby.",
   "main": "index.js",
   "repository": {
@@ -32,6 +32,7 @@
     "purge": "rimraf node_modules && npm run clean",
     "clean": "rimraf ./gatsby-node.* types.*",
     "build": "tsc",
+    "build:watch": "run-s \"build -- -w\"",
     "build:prod": "run-s build typedoc",
     "typedoc": "typedoc --options typedoc.config.js"
   },
