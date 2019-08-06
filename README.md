@@ -70,7 +70,7 @@ This is enabled by default to take some of the guesswork out getting your aliase
 
 ## Required Compiler Options
 
-By default some `compilerOptions` options will be set for you, as a minimum configuration.  Without these options set, there will usually be issues with the output that is fed to `babel-loader`, and will the build will fail.
+By default some `compilerOptions` options will be set for you, as a minimum configuration.  Without these options set, there will usually be issues with the output that is fed to `babel-loader`, and the build will fail.
 
 > _**If these are not configured, then compilation tends to fail.  These options are:**_
 
