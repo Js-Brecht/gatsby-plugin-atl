@@ -44,9 +44,13 @@ export const onCreateWebpackConfig: WebpackConfigFn = (
         // Not entirely sure what it's for, but I'm not using it here, and if it
         // gets fed into the loader options, it will cause it to fail in odd ways.
         pluginOptions.plugins && delete pluginOptions.plugins;
-        pluginOptions.ignoreAliases && delete pluginOptions.ignoreAliases;
 
-        if (!pluginOptions.ignoreAliases) {
+        // If the end-user has decided to exclude alias transformation, then don't
+        // define `transformer()`.  The option also has to be deleted from their input
+        // because it is not a valid option for `awesome-typescript-loader`
+        if (pluginOptions.ignoreAliases) {
+            delete pluginOptions.ignoreAliases;
+        } else {
             transformer = () => TsTransformPaths();
         }
 
