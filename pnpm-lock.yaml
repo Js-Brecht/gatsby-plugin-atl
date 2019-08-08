@@ -1,7 +1,6 @@
 dependencies:
   awesome-typescript-loader: 5.2.1_typescript@3.5.3
   ts-transform-paths: 2.0.0
-  typescript: 3.5.3
 devDependencies:
   '@types/node': 12.7.1
   '@typescript-eslint/eslint-plugin': 1.13.0_83533a371a8016104530023ca8f0ca1d
@@ -12,6 +11,7 @@ devDependencies:
   npm-run-all: 4.1.5
   rimraf: 2.6.3
   typedoc: 0.15.0
+  typescript: 3.5.3
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.5.5:
@@ -9433,6 +9433,9 @@ packages:
       node: '>=6'
     peerDependencies:
       typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     resolution:
       integrity: sha512-f5Knjh7XCyRIzoC/z1Su1yLLRrPrFCgtUAh/9fCSP6NKbATwpOL1+idQVXQokK9GRFURn/jYPGPfegIctwunoA==
   /ts-transform-paths/2.0.0:
