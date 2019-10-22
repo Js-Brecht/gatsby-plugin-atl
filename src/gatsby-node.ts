@@ -50,7 +50,7 @@ export const onCreateWebpackConfig: WebpackConfigFn = (
 		// If the end-user has decided to exclude alias transformation, then don't
 		// define `transformer()`.  The option also has to be deleted from their input
 		// because it is not a valid option for `awesome-typescript-loader`
-		if (!pluginOptions.ignoreAliases) {
+		if (!pluginOptions.ignoreAliases && !(pluginOptions.getCustomTransformers === undefined)) {
 			transformer = () => TsTransformPaths();
 		}
 
