@@ -125,5 +125,7 @@ export const onCreateWebpackConfig: WebpackConfigFn = (
  * `awesome-typescript-loader` is intelligent enough to ignore javascript
  * files if they are not processed.
  * * References: `['.ts', '.tsx', '.js', '.jsx']`
+ *
+ * @returns {string[]} Array of valid file extensions
  */
 export const resolvableExtensions = (): string[] => [".ts", ".tsx", ".js", ".jsx"];
