@@ -46,6 +46,7 @@
     "ts-transform-paths": "^2.0.0"
   },
   "devDependencies": {
+    "@jtechsvcs/eslint-config-typescript": "^1.0.4",
     "@types/node": "^12.6.9",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",

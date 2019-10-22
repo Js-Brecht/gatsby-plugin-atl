@@ -1,12 +1,13 @@
 {
-	"parser": "@typescript-eslint/parser",
-	"plugins": [
-		"@typescript-eslint"
+	"extends": [
+		"@jtechsvcs/typescript"
 	],
-	"extends": ["plugin:@typescript-eslint/recommended"],
 	"rules": {
 		"@typescript-eslint/no-explicit-any": "off",
 		"@typescript-eslint/explicit-function-return-type": "off",
-		"@typescript-eslint/no-var-requires": "off"
+		"@typescript-eslint/no-var-requires": "off",
+		"no-prototype-builtins": "off",
+		"@typescript-eslint/no-object-literal-type-assertion": "off",
+		"@typescript-eslint/ban-types": "off"
 	}
 }
