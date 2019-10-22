@@ -61,3 +61,7 @@ pre {
 		clear: both;
 	}
 }
+
+.tsd-is-inherited > .tsd-sources {
+	display: none;
+}

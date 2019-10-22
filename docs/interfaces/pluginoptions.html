@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LoaderConfig | gatsby-plugin-atl</title>
+	<title>PluginOptions | gatsby-plugin-atl</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -39,10 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -57,10 +53,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="loaderconfig.html">LoaderConfig</a>
+					<a href="pluginoptions.html">PluginOptions</a>
 				</li>
 			</ul>
-			<h1>Interface LoaderConfig</h1>
+			<h1>Interface PluginOptions</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +66,8 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>This is the same LoaderConfig interface that <code>awesome-typescript-loader</code> uses</p>
+						<p>This is <code>awesome-typescript-loader</code> extended with the options Gatsby provides to <code>onCreateWebpack()</code>
+						API endpoint</p>
 					</div>
 				</div>
 			</section>
@@ -78,7 +75,15 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">LoaderConfig</span>
+						<span class="tsd-signature-type">object</span>
+					</li>
+					<li>
+						<a href="atlpluginoptions.html" class="tsd-signature-type">AtlPluginOptions</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">PluginOptions</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -86,266 +91,296 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#babelcore" class="tsd-kind-icon">babel<wbr>Core</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#babeloptions" class="tsd-kind-icon">babel<wbr>Options</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#cachedirectory" class="tsd-kind-icon">cache<wbr>Directory</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#compiler" class="tsd-kind-icon">compiler</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#compileroptions" class="tsd-kind-icon">compiler<wbr>Options</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#configfilecontent" class="tsd-kind-icon">config<wbr>File<wbr>Content</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#configfilename" class="tsd-kind-icon">config<wbr>File<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#context" class="tsd-kind-icon">context</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#debug" class="tsd-kind-icon">debug</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#entryfileisjs" class="tsd-kind-icon">entry<wbr>File<wbr>IsJs</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#errorsaswarnings" class="tsd-kind-icon">errors<wbr>AsWarnings</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#forceisolatedmodules" class="tsd-kind-icon">force<wbr>Isolated<wbr>Modules</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#getcustomtransformers" class="tsd-kind-icon">get<wbr>Custom<wbr>Transformers</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#ignorealiases" class="tsd-kind-icon">ignore<wbr>Aliases</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#ignorediagnostics" class="tsd-kind-icon">ignore<wbr>Diagnostics</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#instance" class="tsd-kind-icon">instance</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#reportfiles" class="tsd-kind-icon">report<wbr>Files</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#silent" class="tsd-kind-icon">silent</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#transpileonly" class="tsd-kind-icon">transpile<wbr>Only</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#usebabel" class="tsd-kind-icon">use<wbr>Babel</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#usecache" class="tsd-kind-icon">use<wbr>Cache</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#useprecompiledfiles" class="tsd-kind-icon">use<wbr>Precompiled<wbr>Files</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="loaderconfig.html#usetranspilemodule" class="tsd-kind-icon">use<wbr>Transpile<wbr>Module</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#babelcore" class="tsd-kind-icon">babel<wbr>Core</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#babeloptions" class="tsd-kind-icon">babel<wbr>Options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#cachedirectory" class="tsd-kind-icon">cache<wbr>Directory</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#compiler" class="tsd-kind-icon">compiler</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#compileroptions" class="tsd-kind-icon">compiler<wbr>Options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#configfilecontent" class="tsd-kind-icon">config<wbr>File<wbr>Content</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#configfilename" class="tsd-kind-icon">config<wbr>File<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#debug" class="tsd-kind-icon">debug</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#entryfileisjs" class="tsd-kind-icon">entry<wbr>File<wbr>IsJs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#errorsaswarnings" class="tsd-kind-icon">errors<wbr>AsWarnings</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#forceisolatedmodules" class="tsd-kind-icon">force<wbr>Isolated<wbr>Modules</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#getcustomtransformers" class="tsd-kind-icon">get<wbr>Custom<wbr>Transformers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#ignorealiases" class="tsd-kind-icon">ignore<wbr>Aliases</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#ignorediagnostics" class="tsd-kind-icon">ignore<wbr>Diagnostics</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#instance" class="tsd-kind-icon">instance</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#reportfiles" class="tsd-kind-icon">report<wbr>Files</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#silent" class="tsd-kind-icon">silent</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#transpileonly" class="tsd-kind-icon">transpile<wbr>Only</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#usebabel" class="tsd-kind-icon">use<wbr>Babel</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#usecache" class="tsd-kind-icon">use<wbr>Cache</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#useprecompiledfiles" class="tsd-kind-icon">use<wbr>Precompiled<wbr>Files</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pluginoptions.html#usetranspilemodule" class="tsd-kind-icon">use<wbr>Transpile<wbr>Module</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="babelcore" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> babel<wbr>Core</h3>
 					<div class="tsd-signature tsd-kind-icon">babel<wbr>Core<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.babelCore</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L25">types.ts:25</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:19</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="babeloptions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> babel<wbr>Options</h3>
 					<div class="tsd-signature tsd-kind-icon">babel<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.babelOptions</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L26">types.ts:26</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:20</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="cachedirectory" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> cache<wbr>Directory</h3>
 					<div class="tsd-signature tsd-kind-icon">cache<wbr>Directory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.cacheDirectory</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L30">types.ts:30</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:24</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="compiler" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> compiler</h3>
 					<div class="tsd-signature tsd-kind-icon">compiler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.compiler</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L15">types.ts:15</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:9</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="compileroptions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> compiler<wbr>Options</h3>
-					<div class="tsd-signature tsd-kind-icon">compiler<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CompilerOptions</span></div>
+					<div class="tsd-signature tsd-kind-icon">compiler<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ts.CompilerOptions</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.compilerOptions</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L22">types.ts:22</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:16</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="configfilecontent" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> config<wbr>File<wbr>Content</h3>
 					<div class="tsd-signature tsd-kind-icon">config<wbr>File<wbr>Content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.configFileContent</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L17">types.ts:17</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:11</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="configfilename" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> config<wbr>File<wbr>Name</h3>
 					<div class="tsd-signature tsd-kind-icon">config<wbr>File<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.configFileName</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L16">types.ts:16</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:10</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="context" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> context</h3>
 					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.context</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L34">types.ts:34</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:28</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="debug" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> debug</h3>
 					<div class="tsd-signature tsd-kind-icon">debug<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.debug</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L32">types.ts:32</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:26</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="entryfileisjs" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> entry<wbr>File<wbr>IsJs</h3>
 					<div class="tsd-signature tsd-kind-icon">entry<wbr>File<wbr>IsJs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.entryFileIsJs</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L31">types.ts:31</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:25</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="errorsaswarnings" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> errors<wbr>AsWarnings</h3>
 					<div class="tsd-signature tsd-kind-icon">errors<wbr>AsWarnings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.errorsAsWarnings</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L19">types.ts:19</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:13</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="forceisolatedmodules" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> force<wbr>Isolated<wbr>Modules</h3>
 					<div class="tsd-signature tsd-kind-icon">force<wbr>Isolated<wbr>Modules<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.forceIsolatedModules</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L18">types.ts:18</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:12</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="getcustomtransformers" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> get<wbr>Custom<wbr>Transformers</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Custom<wbr>Transformers<span class="tsd-signature-symbol">:</span> <a href="../globals.html#transformers" class="tsd-signature-type">Transformers</a></div>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Custom<wbr>Transformers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.getCustomTransformers</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L35">types.ts:35</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:29</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="ignorealiases" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ignore<wbr>Aliases</h3>
 					<div class="tsd-signature tsd-kind-icon">ignore<wbr>Aliases<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="atlpluginoptions.html">AtlPluginOptions</a>.<a href="atlpluginoptions.html#ignorealiases">ignoreAliases</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L13">types.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/a5e1076/src/types.ts#L12">types.ts:12</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<ul>
+								<li>Disables the use of <code>ts-transform-paths</code></li>
+							</ul>
+						</div>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="ignorediagnostics" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ignore<wbr>Diagnostics</h3>
 					<div class="tsd-signature tsd-kind-icon">ignore<wbr>Diagnostics<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.ignoreDiagnostics</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L21">types.ts:21</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:15</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="instance" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> instance</h3>
 					<div class="tsd-signature tsd-kind-icon">instance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.instance</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L14">types.ts:14</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:8</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="reportfiles" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> report<wbr>Files</h3>
 					<div class="tsd-signature tsd-kind-icon">report<wbr>Files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.reportFiles</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L33">types.ts:33</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:27</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="silent" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> silent</h3>
 					<div class="tsd-signature tsd-kind-icon">silent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.silent</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L28">types.ts:28</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:22</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="transpileonly" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> transpile<wbr>Only</h3>
 					<div class="tsd-signature tsd-kind-icon">transpile<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.transpileOnly</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L20">types.ts:20</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:14</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="usebabel" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> use<wbr>Babel</h3>
 					<div class="tsd-signature tsd-kind-icon">use<wbr>Babel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.useBabel</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L24">types.ts:24</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:18</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="usecache" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> use<wbr>Cache</h3>
 					<div class="tsd-signature tsd-kind-icon">use<wbr>Cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.useCache</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L29">types.ts:29</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:23</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="useprecompiledfiles" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> use<wbr>Precompiled<wbr>Files</h3>
 					<div class="tsd-signature tsd-kind-icon">use<wbr>Precompiled<wbr>Files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.usePrecompiledFiles</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L27">types.ts:27</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:21</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="usetranspilemodule" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> use<wbr>Transpile<wbr>Module</h3>
 					<div class="tsd-signature tsd-kind-icon">use<wbr>Transpile<wbr>Module<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from LoaderConfig.useTranspileModule</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Js-Brecht/gatsby-plugin-atl/blob/8bad55f/src/types.ts#L23">types.ts:23</a></li>
+							<li>Defined in D:/dev/source/gatsby/gatsby-plugin-atl/node_modules/.pnpm/registry.npmjs.org/awesome-typescript-loader/5.2.1_typescript@3.6.4/node_modules/awesome-typescript-loader/dist/interfaces.d.ts:17</li>
 						</ul>
 					</aside>
 				</section>
@@ -362,89 +397,92 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface">
+						<a href="atlpluginoptions.html" class="tsd-kind-icon">Atl<wbr>Plugin<wbr>Options</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="loaderconfig.html" class="tsd-kind-icon">Loader<wbr>Config</a>
+						<a href="pluginoptions.html" class="tsd-kind-icon">Plugin<wbr>Options</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#babelcore" class="tsd-kind-icon">babel<wbr>Core</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#babelcore" class="tsd-kind-icon">babel<wbr>Core</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#babeloptions" class="tsd-kind-icon">babel<wbr>Options</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#babeloptions" class="tsd-kind-icon">babel<wbr>Options</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#cachedirectory" class="tsd-kind-icon">cache<wbr>Directory</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#cachedirectory" class="tsd-kind-icon">cache<wbr>Directory</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#compiler" class="tsd-kind-icon">compiler</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#compiler" class="tsd-kind-icon">compiler</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#compileroptions" class="tsd-kind-icon">compiler<wbr>Options</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#compileroptions" class="tsd-kind-icon">compiler<wbr>Options</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#configfilecontent" class="tsd-kind-icon">config<wbr>File<wbr>Content</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#configfilecontent" class="tsd-kind-icon">config<wbr>File<wbr>Content</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#configfilename" class="tsd-kind-icon">config<wbr>File<wbr>Name</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#configfilename" class="tsd-kind-icon">config<wbr>File<wbr>Name</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#context" class="tsd-kind-icon">context</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#context" class="tsd-kind-icon">context</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#debug" class="tsd-kind-icon">debug</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#debug" class="tsd-kind-icon">debug</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#entryfileisjs" class="tsd-kind-icon">entry<wbr>File<wbr>IsJs</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#entryfileisjs" class="tsd-kind-icon">entry<wbr>File<wbr>IsJs</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#errorsaswarnings" class="tsd-kind-icon">errors<wbr>AsWarnings</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#errorsaswarnings" class="tsd-kind-icon">errors<wbr>AsWarnings</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#forceisolatedmodules" class="tsd-kind-icon">force<wbr>Isolated<wbr>Modules</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#forceisolatedmodules" class="tsd-kind-icon">force<wbr>Isolated<wbr>Modules</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#getcustomtransformers" class="tsd-kind-icon">get<wbr>Custom<wbr>Transformers</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#getcustomtransformers" class="tsd-kind-icon">get<wbr>Custom<wbr>Transformers</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#ignorealiases" class="tsd-kind-icon">ignore<wbr>Aliases</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#ignorealiases" class="tsd-kind-icon">ignore<wbr>Aliases</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#ignorediagnostics" class="tsd-kind-icon">ignore<wbr>Diagnostics</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#ignorediagnostics" class="tsd-kind-icon">ignore<wbr>Diagnostics</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#instance" class="tsd-kind-icon">instance</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#instance" class="tsd-kind-icon">instance</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#reportfiles" class="tsd-kind-icon">report<wbr>Files</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#reportfiles" class="tsd-kind-icon">report<wbr>Files</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#silent" class="tsd-kind-icon">silent</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#silent" class="tsd-kind-icon">silent</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#transpileonly" class="tsd-kind-icon">transpile<wbr>Only</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#transpileonly" class="tsd-kind-icon">transpile<wbr>Only</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#usebabel" class="tsd-kind-icon">use<wbr>Babel</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#usebabel" class="tsd-kind-icon">use<wbr>Babel</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#usecache" class="tsd-kind-icon">use<wbr>Cache</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#usecache" class="tsd-kind-icon">use<wbr>Cache</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#useprecompiledfiles" class="tsd-kind-icon">use<wbr>Precompiled<wbr>Files</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#useprecompiledfiles" class="tsd-kind-icon">use<wbr>Precompiled<wbr>Files</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="loaderconfig.html#usetranspilemodule" class="tsd-kind-icon">use<wbr>Transpile<wbr>Module</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pluginoptions.html#usetranspilemodule" class="tsd-kind-icon">use<wbr>Transpile<wbr>Module</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-type-alias">
-						<a href="../globals.html#transformers" class="tsd-kind-icon">Transformers</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#webpackconfigfn" class="tsd-kind-icon">Webpack<wbr>Config<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-private">
+						<a href="../globals.html#omitkeys" class="tsd-kind-icon">omit<wbr>Keys</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="../globals.html#oncreatewebpackconfig" class="tsd-kind-icon">on<wbr>Create<wbr>Webpack<wbr>Config</a>
