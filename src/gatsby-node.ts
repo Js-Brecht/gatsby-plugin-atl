@@ -8,6 +8,7 @@ import {
 import { LoaderConfig, WebpackConfigFn, Transformers } from './types';
 import TsTransformPaths from 'ts-transform-paths';
 import { AtlPluginOptions, WebpackConfigFn } from './types';
+import { omitKeys } from './utils';
 
 /**
  * Integrates `awesome-typescript-loader` into Gatsby's webpack configuration
@@ -25,7 +26,7 @@ export const onCreateWebpackConfig: WebpackConfigFn = (
 	},
 	pluginOptions
 ): void => {
-	let transformer: Transformers | undefined = undefined;
+	let transformer = pluginOptions ? pluginOptions.getCustomTransformers : undefined;
 
 	// These are default compilerOptions that are required for this
 	// plugin to work correctly.
@@ -52,9 +53,6 @@ export const onCreateWebpackConfig: WebpackConfigFn = (
 		if (!pluginOptions.ignoreAliases) {
 			transformer = () => TsTransformPaths();
 		}
-		if (pluginOptions.hasOwnProperty('ignoreAliases')) {
-			delete pluginOptions.ignoreAliases;
-		}
 
 		// If compilerOptions are included, merge them into the default
 		// ones, overriding the defaults
@@ -62,9 +60,21 @@ export const onCreateWebpackConfig: WebpackConfigFn = (
 			Object.assign(
 				compilerOptions,
 				pluginOptions.compilerOptions
-			)
-			delete pluginOptions.compilerOptions;
+			);
 		}
+
+		// Omit keys that are not going to be used by awesome-typescript-loader
+		pluginOptions = omitKeys(
+			pluginOptions,
+			// The default pluginOptions from Gatsby contains plugins[].  Not using it
+			// and it will cause atl to fail.
+			'plugins',
+			// This option belongs to this plugin, not atl
+			'ignoreAliases',
+			// This option has already been merged into the default compiler options, to be
+			// used later.
+			'compilerOptions'
+		);
 	}
 
 	// Default settings to use for this plugin
