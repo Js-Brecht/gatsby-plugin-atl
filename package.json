@@ -21,10 +21,8 @@
     "url": "https://github.com/Js-Brecht/gatsby-plugin-atl/issues"
   },
   "files": [
-    "gatsby-node.d.ts",
+    "dist",
     "gatsby-node.js",
-    "types.d.ts",
-    "types.js",
     "index.js",
     "README.md",
     "LICENSE"
