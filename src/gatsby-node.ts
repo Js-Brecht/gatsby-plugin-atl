@@ -67,11 +67,11 @@ export const onCreateWebpackConfig: WebpackConfigFn = (
 	}
 
 	// Default settings to use for this plugin
-	const defaultOptions: LoaderConfig = {
-		// compiler: require.resolve('ttypescript'),
+	const defaultOptions: AtlPluginOptions = {
+		silent: true,
 		compilerOptions,
-		getCustomTransformers: transformer
-	}
+		getCustomTransformers: transformer,
+	};
 
 
 	// Compile the loader options.  If additional options are included
