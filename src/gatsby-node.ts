@@ -3,9 +3,8 @@ import {
 	ModuleResolutionKind,
 	ScriptTarget,
 	CompilerOptions,
-	JsxEmit
+	JsxEmit,
 } from 'typescript';
-import { LoaderConfig, WebpackConfigFn, Transformers } from './types';
 import TsTransformPaths from 'ts-transform-paths';
 import { AtlPluginOptions, WebpackConfigFn } from './types';
 import { omitKeys } from './utils';
@@ -22,7 +21,7 @@ export const onCreateWebpackConfig: WebpackConfigFn = (
 	{
 		stage,
 		loaders,
-		actions
+		actions,
 	},
 	pluginOptions
 ): void => {
@@ -30,23 +29,16 @@ export const onCreateWebpackConfig: WebpackConfigFn = (
 
 	// These are default compilerOptions that are required for this
 	// plugin to work correctly.
-	let compilerOptions: CompilerOptions = {
+	const compilerOptions: CompilerOptions = {
 		module: ModuleKind.ESNext,
 		target: ScriptTarget.ESNext,
 		noEmit: true,
 		moduleResolution: ModuleResolutionKind.NodeJs,
 		lib: ["dom"],
-		jsx: JsxEmit.React
-	}
+		jsx: JsxEmit.React,
+	};
 
-	// Remove options from the `pluginOptions` that will not be used by
-	// webpack.
 	if (pluginOptions) {
-		// The default pluginOptions contains plugins[]... empty array, generally
-		// Not entirely sure what it's for, but I'm not using it here, and if it
-		// gets fed into the loader options, it will cause it to fail in odd ways.
-		pluginOptions.plugins && delete pluginOptions.plugins;
-
 		// If the end-user has decided to exclude alias transformation, then don't
 		// define `transformer()`.  The option also has to be deleted from their input
 		// because it is not a valid option for `awesome-typescript-loader`
@@ -90,7 +82,7 @@ export const onCreateWebpackConfig: WebpackConfigFn = (
 	const options = Object.assign(
 		{},
 		defaultOptions,
-		pluginOptions
+		pluginOptions,
 	);
 
 	switch (stage) {
@@ -107,7 +99,7 @@ export const onCreateWebpackConfig: WebpackConfigFn = (
 								loaders.js(),
 								{
 									loader: require.resolve("awesome-typescript-loader"),
-									options
+									options,
 								},
 							],
 						},
