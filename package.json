@@ -36,8 +36,8 @@
     "typedoc": "typedoc --options typedoc.config.js"
   },
   "peerDependencies": {
-    "gatsby": "~2.13.50",
-    "typescript": "^3.5.3"
+    "gatsby": "~2.x.x",
+    "typescript": "^3.x.x"
   },
   "dependencies": {
     "awesome-typescript-loader": "^5.2.1",
