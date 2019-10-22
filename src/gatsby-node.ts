@@ -7,12 +7,13 @@ import {
 } from 'typescript';
 import { LoaderConfig, WebpackConfigFn, Transformers } from './types';
 import TsTransformPaths from 'ts-transform-paths';
+import { AtlPluginOptions, WebpackConfigFn } from './types';
 
 /**
  * Integrates `awesome-typescript-loader` into Gatsby's webpack configuration
  * @param {CreateWebpackConfigArgs} config The configuration options that are passed in by
  * `gatsby`.
- * @param {LoaderConfig} pluginOptions The options provided by the user from `gatsby-config`
+ * @param {AtlPluginOptions} pluginOptions The options provided by the user from `gatsby-config`
  * * These are merged with the default configuration options.
  * * Any options specified here will override the defaults.
  */

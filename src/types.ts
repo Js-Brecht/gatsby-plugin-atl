@@ -1,45 +1,29 @@
-import { CompilerOptions, Program, CustomTransformers } from 'typescript';
-import { CreateWebpackConfigArgs, PluginOptions, PluginCallback } from 'gatsby';
+import { LoaderConfig } from 'awesome-typescript-loader/dist/interfaces';
+import { CreateWebpackConfigArgs, PluginOptions as GatsbyPluginOptions, PluginCallback } from 'gatsby';
 
 /**
- * The Transformers type used in LoaderConfig
+ * This is the same LoaderConfig interface that `awesome-typescript-loader` uses,
+ * extended with options specific with this plugin.
+ *
+ * For more details about the plugin options, please see [Awesome Typescript Loader's loader-options documentation]{@link https://github.com/s-panferov/awesome-typescript-loader/#loader-options}
  */
-export type Transformers = string | ((program: Program) => CustomTransformers | undefined);
-
-/**
- * This is the same LoaderConfig interface that `awesome-typescript-loader` uses
- */
-export interface LoaderConfig {
-    ignoreAliases?: boolean;
-    instance?: string;
-    compiler?: string;
-    configFileName?: string;
-    configFileContent?: string;
-    forceIsolatedModules?: boolean;
-    errorsAsWarnings?: boolean;
-    transpileOnly?: boolean;
-    ignoreDiagnostics?: number[];
-    compilerOptions?: CompilerOptions;
-    useTranspileModule?: boolean;
-    useBabel?: boolean;
-    babelCore?: string;
-    babelOptions?: any;
-    usePrecompiledFiles?: boolean;
-    silent?: boolean;
-    useCache?: boolean;
-    cacheDirectory?: string;
-    entryFileIsJs?: boolean;
-    debug?: boolean;
-    reportFiles?: string[];
-    context?: string;
-    getCustomTransformers?: Transformers;
+export interface AtlPluginOptions extends LoaderConfig {
+	/** - Disables the use of `ts-transform-paths` */
+	ignoreAliases?: boolean;
 }
+
+/**
+ * This is `awesome-typescript-loader` extended with the options Gatsby provides to `onCreateWebpack()`
+ * API endpoint
+ *
+ */
+export interface PluginOptions extends Pick<GatsbyPluginOptions, 'plugins'>, AtlPluginOptions { }
 
 /**
  * Same interface that gatsby uses for the `onCreateWebpackConfig()` function
  */
 export type WebpackConfigFn = (
-    args: CreateWebpackConfigArgs,
-    options?: PluginOptions & LoaderConfig,
-    callback?: PluginCallback
+	args: CreateWebpackConfigArgs,
+	options?: PluginOptions,
+	callback?: PluginCallback
 ) => void;
