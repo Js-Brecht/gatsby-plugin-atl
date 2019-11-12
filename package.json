@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-atl",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Adds Awesome Typescript Loader support to gatsby.",
   "main": "index.js",
   "repository": {

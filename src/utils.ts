@@ -11,8 +11,10 @@ export function omitKeys<
 	X extends string | number | symbol = ValuesOf<K>,
 	R = Omit<T, X>
 >(obj: T, ...omit: K): R {
-	return Object.keys(obj).filter((origKey) => !omit.some((filterKey) => origKey === filterKey)).reduce((result, key) => {
-		(result as Record<any, any>)[key] = (obj as Record<any, any>)[key];
-		return result;
-	}, ({} as R));
+	for (const key of omit) {
+		if (key in obj) {
+			delete obj[key];
+		}
+	}
+	return ((obj as unknown) as R);
 }
