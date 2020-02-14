@@ -1,5 +1,7 @@
 # Awesome Typescript Loader plugin for Gatsby
 
+## Warning!  awesome-typescript-loader is no longer supported, so this project is being abandoned as well.
+
 ## Description
 
 This plugin will integrate `awesome-typescript-loader` into the webpack config
